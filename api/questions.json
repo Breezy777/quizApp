@@ -1,0 +1,121 @@
+[
+  {
+    "id":"1",
+    "question": "What's the diameter of planet Earth?",
+    "options": [
+      {
+        "label":"1",
+        "value":"20682 km",
+        "isCorrect": false
+      },
+      {
+        "label":"2",
+        "value":"12,742 km",
+        "isCorrect": true
+      },
+      {
+        "label":"3",
+        "value":"14,042 km",
+        "isCorrect": false
+      }
+
+    ]
+  },
+  {
+    "id":"2",
+    "question": "What's the biggest planet of our solar system?",
+    "options": [
+      {
+        "label":"1",
+        "value":"Uranus",
+        "isCorrect": false
+      },
+      {
+        "label":"2",
+        "value":"Mars",
+        "isCorrect": false
+      },
+      {
+        "label":"3",
+        "value":"Jupiter",
+        "isCorrect": true
+      },
+      {
+        "label":"4",
+        "value":"The sun",
+        "isCorrect": false
+      }
+
+    ]
+  },
+  {
+    "id":"3",
+    "question": "The speed of light is:",
+    "options": [
+      {
+        "label":"1",
+        "value":"299 792 m / s",
+        "isCorrect": false
+      },
+      {
+        "label":"2",
+        "value":"299 792 458 m / s",
+        "isCorrect": true
+      },
+      {
+        "label":"3",
+        "value":"458  m / s",
+        "isCorrect": false
+      },
+      {
+        "label":"4",
+        "value":"30 000 km / s",
+        "isCorrect": false
+      }
+
+    ]
+  },
+  {
+    "id":"4",
+    "question": "How old is the Sun?",
+    "options": [
+      {
+        "label":"1",
+        "value":"4.603 billion years",
+        "isCorrect": true
+      },
+      {
+        "label":"2",
+        "value":"2.603 billion years",
+        "isCorrect": false
+      },
+      {
+        "label":"3",
+        "value":"1.603 billion years",
+        "isCorrect": false
+      },
+      {
+        "label":"4",
+        "value":"603 billion years",
+        "isCorrect": false
+      }
+
+    ]
+  },
+  {
+    "id":"5",
+    "question": "The age of the Universe is",
+    "options": [
+      {
+        "label":"1",
+        "value":"13.8 billion years",
+        "isCorrect": true
+      },
+      {
+        "label":"2",
+        "value":"8 million years",
+        "isCorrect": false
+      }
+    ]
+  }
+]
