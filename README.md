@@ -30,7 +30,7 @@ client is the front end.
 Run npm-instal in each of the child directories to install dependencies.
 
 After installing, to make sure the two(back and front) communicate, run the express server
-on port 3002(port can be changed in package.json of the api folder).
+on port 3002(port can be changed in bin/www file of the api folder).
 
 Quiz questions and answers can be edited in api/questions.json. There is no limit in the number of
 answers per question. Make sure to follow the array of object model. Only one good answer per question is
