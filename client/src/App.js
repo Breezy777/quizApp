@@ -37,12 +37,13 @@ class Quiz extends Component{
 
   //picker randomize questions and make sure all questions are treated equal :D (equal display time for all)
   generate_picker(){
+    //alert(this.state.questions.length-1);
     //we can use this.state.questions.length-1 if total_questions is not available
     if(this.state.total_questions == null)
     return this.shuffle(this.create_fill_array(0, this.state.questions.length-1));
 
     //use stored state var total_questions
-    return this.shuffle(this.create_fill_array(0, this.state.total_questions));
+    return this.shuffle(this.create_fill_array(0, this.state.total_questions-1));
 
   }
 
@@ -198,9 +199,9 @@ class Quiz extends Component{
   refresh_quiz(){
     //next is the index for the picker array
     let next= this.state.next;
-    //next in the picker array values
+    //next_i is the picker array values
     let next_i= this.state.picker[next];
-
+//alert(next_i);
     //set the next question(semi backend)
     //this.setState({question:this.state.questions[next_i]});
 
@@ -338,9 +339,9 @@ class Quiz extends Component{
           <h3>Select quiz Mode</h3>
           <p>Selected Mode: {this.state.quiz_modes[this.state.mode]}</p>
           <ul>
-             
-            <li className='option'  key="1155544"><span className='label'>1 :</span><span className='answer'>Relaxed</span></li>
-            <li className='option' key="569999"><span className='label'>2 :</span><span className='answer'>Timed</span></li>
+
+            <li className='option'  key="1155544" onClick={()=> this.set_mode(0)}><span className='label'>1 :</span><span className='answer'>Relaxed</span></li>
+            <li className='option' key="569999" onClick={()=> this.set_mode(1)}><span className='label'>2 :</span><span className='answer'>Timed</span></li>
           </ul>
 
           <div className="container"><button type="button" name="button" className="validate" onClick={()=> this.start_quiz()}>Start Quiz</button></div>
@@ -384,6 +385,7 @@ class Quiz extends Component{
             <div className="container"><button type="button" name="button" className="validate" onClick={()=> this.play()}>Validate my Answer</button></div>
 
             <p>Mode: {this.state.quiz_modes[this.state.mode]}</p>
+            <p>picker: {this.state.picker}</p>
           </div>
         );
       }
